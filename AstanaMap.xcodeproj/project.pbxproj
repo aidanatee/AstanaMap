@@ -12,6 +12,7 @@
 		DDE0A4BE1EF7C634001B6E70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE0A4BC1EF7C634001B6E70 /* Main.storyboard */; };
 		DDE0A4C01EF7C634001B6E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE0A4BF1EF7C634001B6E70 /* Assets.xcassets */; };
 		DDE0A4C31EF7C634001B6E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE0A4C11EF7C634001B6E70 /* LaunchScreen.storyboard */; };
+		DDE0A4CE1EF7D75D001B6E70 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0A4CD1EF7D75D001B6E70 /* Place.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,8 @@
 		DDE0A4BF1EF7C634001B6E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDE0A4C21EF7C634001B6E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDE0A4C41EF7C634001B6E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE0A4CD1EF7D75D001B6E70 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		DDE0A4D01EF7DA39001B6E70 /* AstanaLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AstanaLocation.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			children = (
 				DDE0A4B71EF7C634001B6E70 /* AstanaMap */,
 				DDE0A4B61EF7C634001B6E70 /* Products */,
+				DDE0A4CA1EF7D6C0001B6E70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +59,22 @@
 			isa = PBXGroup;
 			children = (
 				DDE0A4B81EF7C634001B6E70 /* AppDelegate.swift */,
+				DDE0A4CD1EF7D75D001B6E70 /* Place.swift */,
 				DDE0A4BA1EF7C634001B6E70 /* ViewController.swift */,
+				DDE0A4D01EF7DA39001B6E70 /* AstanaLocation.gpx */,
 				DDE0A4BC1EF7C634001B6E70 /* Main.storyboard */,
 				DDE0A4BF1EF7C634001B6E70 /* Assets.xcassets */,
 				DDE0A4C11EF7C634001B6E70 /* LaunchScreen.storyboard */,
 				DDE0A4C41EF7C634001B6E70 /* Info.plist */,
 			);
 			path = AstanaMap;
+			sourceTree = "<group>";
+		};
+		DDE0A4CA1EF7D6C0001B6E70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +111,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = SJ66XW58ZG;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -137,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDE0A4CE1EF7D75D001B6E70 /* Place.swift in Sources */,
 				DDE0A4BB1EF7C634001B6E70 /* ViewController.swift in Sources */,
 				DDE0A4B91EF7C634001B6E70 /* AppDelegate.swift in Sources */,
 			);
@@ -302,6 +321,7 @@
 				DDE0A4C91EF7C634001B6E70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
